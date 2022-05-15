@@ -1,0 +1,42 @@
+.uselist {
+     height: 80vh;
+     margin-top: var(--menu-height);
+     //margin: 0;
+     display: grid;
+     grid-template-columns: var(--grid-container);
+
+     &__inner {
+          margin: 0;
+          grid-column: var(--grid-main);
+
+          .uselist_inner,
+          h3 {
+               margin: 0;
+               padding: 0;
+          }
+
+          .userlist_table {
+               width: 100%;
+          }
+     }
+}
+
+.uselistf {
+     //height: 80vh;  // ไม่ต้องการfooter ก็ให้หน้าเพจมีสไล์ดาวน์
+     margin-top: var(--menu-height);
+     display: grid;
+     grid-template-columns: var(--grid-container);
+     &__inner {
+          grid-column: var(--grid-main);
+     }
+}
+
+.uselist_table {
+     // max-width: 800px;
+     width: 100%;
+     border: 0; // ทำให้ table ไม่มีกรอบ
+     .q_photo,
+     img {
+          min-height: 200px;
+     }
+}
