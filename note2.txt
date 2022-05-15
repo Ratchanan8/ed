@@ -1,0 +1,39 @@
+ฟังก์ชันที่ใช้ : isset , trim , empty
+$str : ค่า string
+row_q
+echo (empty($row_q) || trim($row_q)= "" ) ? "" : $row_q;
+echo (!isset($str) || trim($str)="" ) ? "Empty" : "Not Empty" ;
+ถ้า ไม่มีค่ามา หรือ ตัดช่องว่างอักษรแล้ว เป็น "" ให้พิมพ์ "Empty"   ถ้าอย่างอื่น พิมพ์ "Not Empty"
+---------------------------------------------------------------------------------------
+พิมพ์คำว่า "Empty" ถ้าหากไม่ได้ตั้งค่า(!isset) $str หรือ(||) ตัดช่องว่างแล้วไม่เหลือค่าอะไรเลย
+ถ้าไม่เป็นไปตามเงื่อนไขดังกล่าวให้พิมพ์คำว่า "Not Empty"
+
+echo (empty($str)) ? "Empty" : "Not Empty" ;
+ถ้า $str เป็นค่าว่าง ให้พิมพ์คำว่า "Empty" ถ้าไม่ว่างให้พิมพ์ "Not Empty"
+---------------------------------------------------------------------------------------
+ฟังก์ชัน is_null()
+$y=is_null($x);
+if ($y)
+echo "variable is NULL";
+ฟังก์ชัน is_null() จะ return ค่า TRUE ถ้าตัวแปรมีค่าเป็น NULL
+
+ฟังก์ชัน is_null() จะ return ค่า FALSE ถ้าตัวแปรไม่มีค่าเป็น NULL
+---------------------------------------------------------------------------------------
+
+
+<?php if (isset($row_result) ) {$row_result = $row_result; } else {$row_result = "";}
+  echo $row_result;
+?>
+<a href="q_a_form.php?mode=add&id=<?php echo $row['question_id'];?>">Ans</a>
+------------------------------------------
+แบ่งหน้ากระดาษ
+https://www.itoffside.com/php-pagination-example-using-mysqli-database/
+------------------------------------------
+
+form {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               color: var(--color-dark);
+          }

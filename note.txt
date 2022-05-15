@@ -1,0 +1,59 @@
+<input type="submit" name="submit" value="Edit" class="btn"  />
+-------------------------
+
+<?php if ($_GET['mode'] =="add") { ?>
+                        <input type="image" name="add" value="add" src="images/btn-save.png" class="btn">
+                        <input type="image" name="cancel" value="cancel" src="images/btn-cancel.png" class="btn"> 
+                    <?php } elseif ($_GET['mode'] =="edit") { ?>
+                        <input type="image" name="edit" value="edit" src="images/btn-edit.png" class="btn">
+                        <input type="image" name="cancel" value="cancel" src="images/btn-cancel.png" class="btn"> 
+                    <?php } elseif ($_GET['mode'] =="del") { ?>
+                        <input type="image" name="del" value="del" src="images/btn-del.png" class="btn">            
+                        <input type="image" name="cancel" value="cancel" src="images/btn-cancel.png" class="btn"> 
+                    <?php } ?>  
+---------------------------------------------------------------------------------------
+
+<?php if ($_GET['mode'] =="add") { ?>
+                        <input type="submit" class="btn" style="background-image:url(images/btn-save.png); border:none;   
+ width:120px;height:66px; color:transparent;" value="add" name="submit-mode"/>
+
+                        <input type="image" name="submit-mode" value="add" src="images/btn-save.png" class="btn">
+
+<input type="submit" style="background-image:url(images/btn-cancel.png); border:none;   
+ width:120px;height:66px; color:transparent;" value="cancel" name="submit-mode"/>
+ 
+                    <?php } elseif ($_GET['mode'] =="edit") { ?>
+                        <input type="submit" style="background-image:url(images/btn-edit.png); border:none;   
+ width:120px;height:66px; color:transparent;" value="edit" name="submit-mode"/>
+
+<input type="submit" style="background-image:url(images/btn-cancel.png); border:none;   
+ width:120px;height:66px; color:transparent;" value="cancel" name="submit-mode"/>
+
+
+                    <?php } elseif ($_GET['mode'] =="del") { ?>
+                        <input type="submit" style="background-image:url(images/btn-del.png); border:none;   
+ width:120px;height:66px; color:transparent;" value="del" name="submit-mode"/>
+
+<input type="submit" style="background-image:url(images/btn-cancel.png); border:none;   
+ width:120px;height:66px; color:transparent;" value="cancel" name="submit-mode"/>
+                    <?php } ?> 
+--------------------------------------------------------------
+เวลาส่งค่าไปจะได้ submit-mode.x=38&submit-mode.y=20
+
+<?php if ($_GET['mode'] =="add") { ?> 
+                    
+                        <input type="image" name="submit-mode" value="add" src="images/btn-save.png" class="btn">
+                        <input type="image" name="submit-mode" value="cancel" src="images/btn-cancel.png" class="btn">
+ 
+ 
+                    <?php } elseif ($_GET['mode'] =="edit") { ?>
+                        <input type="image" name="submit-mode" value="edit" src="images/btn-edit.png" class="btn">
+                        <input type="image" name="submit-mode" value="cancel" src="images/btn-cancel.png" class="btn">
+
+
+                    <?php } elseif ($_GET['mode'] =="del") { ?>
+                        <input type="image" name="submit-mode" value="del" src="images/btn-del.png" class="btn">
+                        <input type="image" name="submit-mode" value="cancel" src="images/btn-cancel.png" class="btn">
+
+                    <?php } ?> 
+--------------------------------------------------------------
