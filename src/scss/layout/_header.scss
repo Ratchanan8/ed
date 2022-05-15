@@ -1,0 +1,69 @@
+@use '../tools/responsive';
+.header {
+     display: grid;
+     grid-template-columns: var(--grid-container);
+
+     height: var(--menu-height);
+     width: 100%;
+     &__inner { 
+          grid-column: var(--grid-main);
+
+          position: relative; // เกี่ยวกับเมนูแฮมเบอร์เกอร์
+
+          display: grid;
+          grid-template-columns: 50% 40% 10%;
+          align-items: center;
+          
+          @media screen and (max-width: 375px) {
+               display: flex;
+               flex-direction: column; 
+               justify-content: space-between;
+    
+          }
+
+           
+          
+     }
+
+     &__logo {
+          margin-top: 0;
+          font-family: var(--font-sans);
+          a {
+               color: var(--color-accent);
+          }
+          img {
+               float: left; 
+               size: auto; 
+               max-width: auto;
+               //height: var(--menu-height);
+          }
+
+          @media screen and (max-width: 376px) {
+               img {
+                    width: auto;
+                    height: 20px;
+               }
+          }
+     }
+
+     &__showUser {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          a {
+               color: var(--color-dark);
+          }
+
+          a:hover {
+               color: var(--color-accent);
+          }
+
+          @media screen and (max-width: 375px) {
+               img {
+                    width: auto;
+                    height: 30px;
+               }
+          }
+     }
+}

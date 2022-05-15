@@ -1,0 +1,77 @@
+.menu {
+     z-index: 999;
+     top: 50px;  // ถ้าเอาโลโก้รถมาใส่
+     position: absolute; // เกี่ยวกับเมนูแฮมเบอร์เกอร์
+     right: 30px; // เกี่ยวกับเมนูแฮมเบอร์เกอร์
+     @media screen and (max-width: 376px) {
+          top: 6px;
+     }
+
+     &__content {
+          // margin-right: 10px;
+          width: 250px;
+          background-color: var(--color-yellow);
+          padding: 0px 30px;
+          box-shadow: 1px 2px 3px var(--color-dark);
+          font-family: var(--font-sans);
+          font-size: var(--font-size-2);
+          color: var(--color-dark);
+     }
+
+     ul {
+          list-style-type: none;
+          padding: 0;
+     }
+
+     a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: var(--color-dark);
+     }
+     a:hover {
+          color: var(--color-accent);
+     }
+}
+
+.menu label {
+     //font-family: "Sedgwick Ave Display", cursive;
+     font-size: var(--font-size-1); // 56px
+     display: block;
+     cursor: pointer;
+     background: url(images/menu.png) no-repeat right center;
+     padding: 10px 0 10px 50px;
+     @media screen and (max-width: 376px) {
+           
+          background-size: 20px;
+     }
+}
+input#menu {
+     display: none;
+}
+
+input:checked + label {
+     background-image: url(images/close.png);
+     @media screen and (max-width: 376px) {
+           
+          background-size: 20px;
+     }
+}
+
+.menu__content {
+     max-height: 0;
+     overflow: hidden;
+     font-family: var(--font-serif);
+     padding: 0 0 0 50px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+     background-image: url(images/close.png);
+     @media screen and (max-width: 376px) {
+         
+          background-size: 20px;
+     }
+}
+input:checked ~ .menu__content {
+     max-height: 100%;
+}

@@ -1,0 +1,23 @@
+.login {
+     display: grid;
+     grid-template-columns: var(--grid-container);
+     height: 78vh;
+     &__inner {
+          grid-column: main;
+          //font-family: var(--font-serif);
+          //font-size: var(--font-size-3);
+
+          display: flex;
+          justify-content: center;
+     }
+     &__fream {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 3rem;
+          padding: 1rem;
+          width: 500px;
+          max-height: 520px;
+     }
+}

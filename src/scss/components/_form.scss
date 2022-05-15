@@ -1,0 +1,87 @@
+form {
+     line-height: 1.6;
+}
+
+.form_label {
+     font-family: var(--font-sans);
+     font-size: var(--font-size-3);
+}
+// มีผลกับ regis login user_list
+input,
+textarea,
+select {
+     padding: 0.5rem;
+     border-radius: 5px;
+     border: 0;
+     border-color: var(--color-accent);
+     box-shadow: 1px 1px 2px 2px var(--color-lighter);
+     margin-bottom: 1.2rem;
+     font-family: var(--font-serif);
+     font-size: var(--font-size-2);
+     color: var(--color-dark);
+     width: 350px;
+}
+
+button {
+     background-color: var(--color-accent);
+     border-radius: 0.25rem;
+     padding: 0.5rem 1rem;
+     border: 1px;
+     border-color: var(--color-accent);
+     color: var(--color-light);
+     box-shadow: 1px 1px 2px 2px var(--color-lighter);
+     margin-bottom: 1.2rem;
+     text-align: center;
+     text-decoration: none;
+     font-family: var(--font-sans);
+     font-size: var(--font-size-2);
+     cursor: pointer;
+}
+.public__fream {
+     background-color: var(--color-yellow);
+     border-radius: 5px;
+     border: 0;
+     box-shadow: 1px 1px 2px 2px var(--color-lighter);
+
+     position: relative; // iconOnFrame
+}
+.btn {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     color: transparent;
+     box-shadow: none;
+     //position: relative;
+     &__mode {
+          margin-left: 2.5rem;
+     }
+}
+.mode {
+     text-align: center;
+}
+.show_photo,
+img {
+     max-width: 50%;
+}
+
+.iconOnFrame {
+     position: absolute;
+     top: -4.2rem;
+     left: 1rem;
+
+     display: grid;
+     grid-template-columns: auto auto;
+     align-items: center;
+
+     font-family: var(--font-sans);
+     font-size: var(--font-size-3);
+}
+.two_columns {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+}
+.form_answer {
+     font-size: var(--font-size-2);
+     display: grid;
+}

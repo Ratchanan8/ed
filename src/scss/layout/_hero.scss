@@ -1,0 +1,19 @@
+.hero {
+     //height: 80vh;
+     min-height: 100vh;
+
+     background-image: url(images/bg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     display: flex;
+     justify-content: center;
+
+     bottom: 0;
+     @media screen and (max-width: 376px) {
+          img {
+               width: auto;
+                height: 200px;
+          }
+     }
+}
